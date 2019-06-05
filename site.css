@@ -9,3 +9,15 @@ white
 black
 based off this image https://www.pinterest.com/pin/AR-t6SPy7PT12YVEgU1eV-cGsAc1_zpUNOiUKosfD5lIESY4o1ve2ro/
 */
+
+header{
+    background-color: #D93A2B;
+    color:white;
+}
+body{
+    color: #F27127;
+}
+footer{
+    background-color:#591647;
+    color:white;
+}
