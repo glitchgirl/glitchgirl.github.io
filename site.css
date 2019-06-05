@@ -15,7 +15,7 @@ header{
     color:white;
 }
 header a{
-    color:white;
+    color:white !important;
 }
 body{
     color: #F27127;
