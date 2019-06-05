@@ -14,6 +14,9 @@ header{
     background-color: #D93A2B;
     color:white;
 }
+header a{
+    color:white;
+}
 body{
     color: #F27127;
 }
