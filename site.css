@@ -24,3 +24,6 @@ footer{
     background-color:#591647;
     color:white;
 }
+footer a{
+    color:white !important;
+}
