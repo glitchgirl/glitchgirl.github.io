@@ -27,3 +27,14 @@ footer{
 footer a{
     color:white !important;
 }
+
+.me{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .me{
+      height: 50px;
+      width: 50px;
+    }
+  }
