@@ -10,6 +10,7 @@ black
 based off this image https://www.pinterest.com/pin/AR-t6SPy7PT12YVEgU1eV-cGsAc1_zpUNOiUKosfD5lIESY4o1ve2ro/
 */
 
+/*START MAIN*/
 header{
     background-color: #D93A2B;
     color:white;
@@ -38,3 +39,10 @@ footer a{
       width: 50px;
     }
   }
+/*END MAIN
+START CONTACT*/
+
+.contactList{
+    list-style: none;
+    text-align: center;
+}
