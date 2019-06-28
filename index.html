@@ -19,17 +19,40 @@
     <a href="/contact.html">Contact</a>
 </header>
 <img class="me" :src="imageMe" /> 
-  
-<p>{{ description }}</p>
-<p></p>
+
+<h3>Hi,</h3>
+<p>My name is Morgan Smith. I’m a very serious Web Developer.
+I have been making sites since I was about 10, my neopets had the coolest landing pages of any digital animals. 
+Then, during high school I kinda lost touch with coding, but fell in love with hardware. 
+This is also when I learned a lot about OS, due to my skills in killing machines. 
+I was probably the only 14 year old with a linux OS, and my dad was probably the only father who thought it would be a fun learning experience and a punishment (he was right). 
+</p>
+<p>
+  Then in college, I took a programming class and  started to remember how much I enjoyed coding. 
+  I started making some small side projects, but being in college and working I didn’t get too much free time. 
+  But I did do plays, and hackathons. Of which, I won one.
+</p>
+<img :src="imageHack">
+<p> From that hackathon I won an internship at RSI. 
+  During my internship, I got to work on .NET projects, PHP projects, and JS applications. While I was there I also managed a hackathon for a local charity. 
+  Then I graduated, and applied for way to many and was overwhelmed by choice.
+</p>
+<p>I ended up taking a job with a company that I have been working for on and off since 2014: Windsor Fine Jewelers, where I am currently their devops engineer. 
+I manage multiple ecommerce sites, using magento and woocommerce. I also run smaller, non ecommerce sites for information for the store.
+I run these sites from server to css. Notably, during my time I have over tripled the site speed and helped ensure their security. 
+I want to continue my serious web dev skills, especially in a structured environment where I can continue to use my skills.  
+</p>
+
+
+
 <footer>
     <email></email>
     <phone></phone>
-    <div class = "socmeds">
-        <a :href="githubLink">Github</a> 
-        <a :href="instaLink">Instagram</a> 
-        <a :href="instaLink">Twitter</a>
-    </div>
+    <ul v-for="link in links">
+      <li>
+        <a :href="link.linkUrl">{{link.website}}</a>
+      </li>
+    </ul>
     <div>
       <p>{{date}} - {{returnToday}}</p>
     </div>

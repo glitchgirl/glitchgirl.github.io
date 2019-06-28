@@ -2,14 +2,25 @@ var app = new Vue({
     el:'#app',
     data() {
         return {
-            description: 'so we gonna put a picture here we gonna write a pretty thing about me as a human  then we summarize resume then direct Portfolio or whatever',
-            githubLink:"https://github.com/glitchgirl",
-            instaLink:"https://www.instagram.com/morganchasemakes/?hl=en",
-            linkedLink:"https://www.linkedin.com/in/morgan-smith-bb4258139/",
             imageMe:"/me.jpg",
             imgageConBack:"/background.jpg",
+            imageHack:"/hackathon1.jpg",
             date: new Date().getDate(), 
-            dateText:""
+            dateText:"",
+            links:[
+                {
+                    website:"github",
+                    linkUrl:"https://github.com/glitchgirl"
+                },
+                {
+                    website:"linkedIn",
+                    linkUrl:"https://www.linkedin.com/in/morgan-smith-bb4258139/"
+                },
+                {
+                    website:"instagram",
+                    linkUrl:"https://www.instagram.com/morganchasemakes/?hl=en"
+                }
+            ]
         }
     },
     computed: {

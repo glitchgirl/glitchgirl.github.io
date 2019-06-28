@@ -33,6 +33,9 @@ footer a{
     text-align: center;
 }
 
+li{
+    list-style: none;
+}
 @media only screen and (max-width: 600px) {
     .me{
       height: 50px;
@@ -43,6 +46,5 @@ footer a{
 START CONTACT*/
 
 .contactList{
-    list-style: none;
     text-align: center;
 }
