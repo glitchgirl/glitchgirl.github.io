@@ -36,6 +36,9 @@ footer a{
 li{
     list-style: none;
 }
+p{
+    margin: none;
+}
 @media only screen and (max-width: 600px) {
     .me{
       height: 50px;
