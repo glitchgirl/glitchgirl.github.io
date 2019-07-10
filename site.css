@@ -40,6 +40,11 @@ footer a{
     height: 300px;
 }
 
+.hackathon{
+    float:right;
+    height: 300px;
+}
+
 li{
     list-style: none;
 }
@@ -65,7 +70,7 @@ START PORTOFOLIO*/
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 
 .gallery__img {

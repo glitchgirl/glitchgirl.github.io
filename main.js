@@ -21,6 +21,10 @@ var app = new Vue({
                 {
                     website:"instagram",
                     linkUrl:"https://www.instagram.com/morganchasemakes/?hl=en"
+                },
+                {
+                    website:"dev.to",
+                    linkUrl:"https://dev.to/glitchgirl"
                 }
             ]
         }
