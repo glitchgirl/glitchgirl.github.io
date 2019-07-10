@@ -33,7 +33,11 @@ footer a{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+}
+
+.hacker{
+    float:left; 
+    height: 300px;
 }
 
 li{
@@ -68,4 +72,18 @@ START PORTOFOLIO*/
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }

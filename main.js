@@ -2,9 +2,11 @@ var app = new Vue({
     el:'#app',
     data() {
         return {
-            imageMe:"/me.jpg",
-            imgageConBack:"/background.jpg",
-            imageHack:"/hackathon1.jpg",
+            imageMe:"/images/me.jpg",
+            imgageConBack:"/images/background.jpg",
+            imageHack:"/images/hackathon1.jpg",
+            imageExampleOne:"/images/example of work 1.jpg",
+            imageExampleTwo:"/images/example of work 2.png",
             date: new Date().getDate(), 
             dateText:"",
             links:[
