@@ -30,7 +30,10 @@ footer a{
 }
 
 .images{
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 li{
@@ -50,4 +53,19 @@ START CONTACT*/
 
 .contactList{
     text-align: center;
+}
+
+/*END CONTACT
+START PORTOFOLIO*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

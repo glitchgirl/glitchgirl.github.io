@@ -1,1 +1,46 @@
 <!--gonna do a css grid with the example pics then links to other stuff-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="site.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <title>personal site</title>
+
+  </head>
+
+<body>
+<div id="app">
+
+<header>
+    <a href="/index.html">Home</a>
+    <a href="/portfolio.html">Portfolio</a>
+    <a href="/contact.html">Contact</a>
+</header>
+<div class="gallery"></div>
+<div class="writing">
+    <p>Come see my writing:</p>
+</div>
+<div class="current">
+    <p>Here is my current project:</p>
+</div>
+<footer>
+    <email></email>
+    <phone></phone>
+    <ul v-for="link in links">
+      <li>
+        <a :href="link.linkUrl">{{link.website}}</a>
+      </li>
+    </ul>
+    <div>
+      <p>{{date}} - {{returnToday}}</p>
+    </div>
+</footer>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
