@@ -14,20 +14,29 @@ based off this image https://www.pinterest.com/pin/AR-t6SPy7PT12YVEgU1eV-cGsAc1_
 header{
     background-color: #D93A2B;
     color:white;
+    opacity: 70%;
 }
 header a{
     color:white !important;
 }
+
 body{
     color: #F27127;
 }
+
 footer{
-    background-color:#591647;
+    background-color:#D93A2B;
     color:white;
 }
+
 footer a{
     color:white !important;
 }
+
+.date{
+    float: right;
+}
+
 #container {
     position: relative;
     min-height: 100vh;
@@ -43,36 +52,78 @@ footer a{
     width: 100%;
 }
 
-.hacker{
-    float:left; 
-    height: 300px;
+.homeGrid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 
-.hackathon{
-    float:right;
-    height: 300px;
+.grid-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
 }
 
-.homeTop{
-    overflow: hidden;
-}
+.grid-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1;
+  }
 
-.homeBottom{
-    overflow: hidden;
-}
+.grid-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+  }
+  
+  .grid-4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 2;
+  }
 
 li{
     list-style: none;
 }
+
 p{
     margin: 0px;
 }
-@media only screen and (max-width: 600px) {
-    .images{
-      height: 50px;
-      width: 50px;
+
+.hackathon{
+    width: 700px;
+}
+
+/* END DESKTOP
+START MOBILE*/
+
+@media screen and (max-width: 768px) {
+    .homeGrid{
+      grid-template-rows: repeat(4, 1fr);
     }
-  }
+    .grid-1{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 1;
+    }
+    .grid-2{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 2;
+    }
+    .grid-3{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 3;
+    }
+    .grid-4{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 4;
+    }
+}
+
 /*END MAIN
 START CONTACT*/
 
