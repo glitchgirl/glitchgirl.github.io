@@ -33,17 +33,17 @@
 <div class="current">
     <p>Here is my current project:</p>
 </div>
-<footer>
-    <email></email>
-    <phone></phone>
-    <ul v-for="link in links">
-      <li>
-        <a :href="link.linkUrl">{{link.website}}</a>
-      </li>
-    </ul>
-    <div>
-      <p>{{date}} - {{returnToday}}</p>
-    </div>
+<footer id="footer">
+  <email></email>
+  <phone></phone>
+  <ul v-for="link in links">
+    <li>
+      <a :href="link.linkUrl">{{link.website}}</a>
+    </li>
+  </ul>
+  <div class="date">
+    <p>{{date}} - {{returnToday}}</p>
+  </div>
 </footer>
 
 </div>
