@@ -146,6 +146,9 @@ START CONTACT*/
 .contactList{
     text-align: center;
 }
+.top{
+    background-image:"/images/background.jpg";
+}
 
 /*END CONTACT
 START PORTOFOLIO*/
