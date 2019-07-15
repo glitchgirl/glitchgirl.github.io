@@ -146,8 +146,14 @@ START CONTACT*/
 .contactList{
     text-align: center;
 }
+
 .top{
-    background-image:"/images/background.jpg";
+    background-image:url("/images/background.jpg");
+}
+
+.contactTitle{
+    color: black;
+    text-align: center;
 }
 
 /*END CONTACT

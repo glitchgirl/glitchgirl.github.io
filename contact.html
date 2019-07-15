@@ -17,7 +17,7 @@
     </header>
     <div id="app">
         <div class="top">
-        <h1>Contact me</h1>
+        <h1 class="contactTitle">Contact me</h1>
         </div>
         <div class="bottom">
             <ul class="contactList">
@@ -30,5 +30,17 @@
             </ul>
         </div>
     </div>
+    <footer id="footer">
+        <email></email>
+        <phone></phone>
+        <ul v-for="link in links">
+          <li>
+            <a :href="link.linkUrl">{{link.website}}</a>
+          </li>
+        </ul>
+        <div class="date">
+          <p>{{date}} - {{returnToday}}</p>
+        </div>
+    </footer>
     </body>
 </html>
