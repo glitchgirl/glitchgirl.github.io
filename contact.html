@@ -20,19 +20,14 @@
         <h1 class="contactTitle">Contact me</h1>
         </div>
         <div class="bottom">
-            <ul class="contactList">
-                <li>
-                <a :href="linkedLink">LinkedIn</a>
-                </li>
-                <li>
-                    <a :href="githubLink">Github</a> 
-                </li>
-            </ul>
+          <ul v-for="link in links">
+            <li>
+              <a :href="link.linkUrl">{{link.website}}</a>
+            </li>
+          </ul>
         </div>
    
     <footer id="footer">
-        <email></email>
-        <phone></phone>
         <ul v-for="link in links">
           <li>
             <a :href="link.linkUrl">{{link.website}}</a>
