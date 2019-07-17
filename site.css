@@ -108,7 +108,7 @@ p{
 /* END DESKTOP
 START MOBILE*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .homeGrid{
       grid-template-rows: repeat(4, 1fr);
     }
