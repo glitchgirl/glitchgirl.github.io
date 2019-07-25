@@ -22,10 +22,10 @@
    <!-- Images used to open the lightbox -->
 <div class="row">
   <div class="column">
-    <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <img :src="imageExampleOne" onclick="openModal();currentSlide(1)" class="hover-shadow">
   </div>
   <div class="column">
-    <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    <img src="imageExampleTwo" onclick="openModal();currentSlide(2)" class="hover-shadow">
   </div>
 </div>
 
@@ -36,12 +36,12 @@
 
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="example of work 1.jpg" style="width:100%" alt="Example of work">
+      <img :src="imageExampleOne" style="width:100%" alt="Example of work">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="example of work 2.png" style="width:100%" alt="Example of work">
+      <img :src="imageExampleTwo" style="width:100%" alt="Example of work">
     </div>
 
     <!-- Next/previous controls -->
@@ -55,11 +55,11 @@
 
     <!-- Thumbnail image controls -->
     <div class="column">
-      <img class="demo" src="example of work 1.jpg" onclick="currentSlide(1)" alt="Example of work">
+      <img class="demo" :src="imageExampleOne" onclick="currentSlide(1)" alt="Example of work">
     </div>
 
     <div class="column">
-      <img class="demo" src="example of work 2.png" onclick="currentSlide(2)" alt="Example of work">
+      <img class="demo" :src="imageExampleTwo" onclick="currentSlide(2)" alt="Example of work">
     </div>
   </div>
 </div>
