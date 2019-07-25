@@ -7,6 +7,8 @@ var app = new Vue({
             imageHack:"/images/hackathon1.jpg",
             imageExampleOne:"/images/example of work 1.jpg",
             imageExampleTwo:"/images/example of work 2.png",
+            imageExampleOneSmall:"/images/example of work 1-small.jpg",
+            imageExampleTwoSmall:"/images/example of work 2-small.png",
             date: new Date().getDate(), 
             dateText:"",
             links:[
