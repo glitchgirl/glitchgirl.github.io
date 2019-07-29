@@ -133,12 +133,12 @@ START MOBILE*/
         grid-row: 4;
     }
     .hacker{
-        height: 50px;
-        width: 50px;
+        height: 100px;
+        width: 100px;
     }
     .hackathon{
-        height: 50px;
-        width: 50px;
+        height: 100px;
+        width: 100px;
     }
 }
 
