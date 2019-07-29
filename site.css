@@ -52,7 +52,7 @@ footer a{
   
 #footer {
     position: absolute;
-    bottom: 0;
+    /*bottom: 0;*/
     width: 100%;
 }
 
@@ -162,8 +162,8 @@ START CONTACT*/
 START PORTOFOLIO*/
 .gallery {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 5vw);
     grid-gap: 5px;
 }
 .gallery__img {
