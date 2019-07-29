@@ -27,16 +27,17 @@
           </ul>
         </div>
    
-    <footer id="footer">
-        <ul v-for="link in links">
-          <li>
-            <a :href="link.linkUrl">{{link.website}}</a>
-          </li>
-        </ul>
-        <div class="date">
-          <p>{{date}} - {{returnToday}}</p>
+        <footer id="footer">
+          <ul v-for="link in links">
+            <li>
+              <a :href="link.linkUrl">{{link.website}}</a>
+            </li>
+          </ul>
+          <div class="date">
+            <p>{{date}} - {{returnToday}}</p>
+          </div>
+        </footer>
         </div>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
 </div>
