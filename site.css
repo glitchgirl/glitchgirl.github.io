@@ -158,6 +158,10 @@ START CONTACT*/
     text-align: center;
 }
 
+.footerContact{
+    bottom:0;
+}
+
 /*END CONTACT
 START PORTOFOLIO*/
 .gallery {
