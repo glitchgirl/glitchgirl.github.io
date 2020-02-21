@@ -1,90 +1,215 @@
-/*
-color palette:
-purple #591647
-yellow #F2C744
-light orange #F2B035
-orange #F27127
-red #D93A2B
-white 
-black
-based off this image https://www.pinterest.com/pin/AR-t6SPy7PT12YVEgU1eV-cGsAc1_zpUNOiUKosfD5lIESY4o1ve2ro/
-*/
 
 /*START MAIN*/
 header{
-    background-color: #D93A2B;
-    color:white;
-    opacity: 70%;
+    background-color: #05F2AF;
+    color:black;
     text-align: center;
     padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 header a{
-    color:white !important;
+    color:black !important;
     padding: 10px;
 }
 
-body{
-    color: #D93A2B;
-}
-
-footer{
-    background-color:#D93A2B;
-    color:white;
-}
-
-footer a{
-    color:white !important;
-}
 
 .date{
     float: right;
+    color:white;
 }
 
 #container {
     position: relative;
     min-height: 100vh;
-  }
-  
+}
+
 #content-wrap {
     padding-bottom: 1rem;    /* Footer height */
 }
-  
-#footer {
+
+footer {
+    background-color:#02733E;
     position: absolute;
     /*bottom: 0;*/
     width: 100%;
 }
 
-.homeGrid{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(4, 1fr);
+footer a{
+    color:white;
 }
 
-.grid-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 1;
+/* Rectangle 1 */
+
+#rectOne{
+position: absolute;
+width: 425px;
+height: 637px;
+
+background: #FFFFFF;
 }
 
-.grid-2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row: 1;
-  }
+/* Rectangle 3 */
 
-.grid-3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 2;
-  }
-  
-  .grid-4 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row: 2;
-  }
+#rectThree{
+position: absolute;
+width: 425px;
+height: 74px;
+
+background: #02733E;
+}
+
+/* links links links */
+
+#links{
+position: absolute;
+width: 110px;
+height: 47px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+
+color: #FFFFFF;
+}
+
+
+/* copy right info */
+
+#copy{
+position: absolute;
+width: 98px;
+height: 11px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+
+color: #FFFFFF;
+}
+
+
+/* Rectangle 4 */
+
+#rectFour{
+position: absolute;
+width: 225px;
+height: 197px;
+
+background: #583994;
+filter: blur(4px);
+}
+
+/* Rectangle 8 */
+
+#rectEight{
+position: absolute;
+width: 225px;
+height: 197px;
+
+background: #05F2AF;
+filter: blur(4px);
+}
+
+/* Rectangle 9 */
+
+#rectNine{
+position: absolute;
+width: 225px;
+height: 197px;
+
+background: url(A5AACFC2-ECD4-405D-A2AF-B2379B8DB889.jpg);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Rectangle 5 */
+
+#rectFive{
+position: absolute;
+width: 225px;
+height: 197px;
+
+background: url(me.jpg);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Rectangle 6 */
+
+#rectSix{
+position: absolute;
+width: 186px;
+height: 100px;
+
+background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Rectangle 10 */
+
+#rectTen{
+position: absolute;
+width: 186px;
+height: 100px;
+
+background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Rectangle 7 */
+
+#rectSeven{
+position: absolute;
+width: 175px;
+height: 90px;
+
+background: #05F2AF;
+}
+
+/* Rectangle 11 */
+
+#rectEleven{
+position: absolute;
+width: 175px;
+height: 90px;
+
+background: #583994;
+}
+
+/* beep beeep beep beep beeep beepb eaf’klkasdjfsakdfj asdf asj faei fhas idfa eg a */
+#beep{
+position: absolute;
+width: 165px;
+height: 82px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+}
+
+
+/* afsudhf’asid’fasefjewa’oifh’rghua’fh’sadfjsd i’fj */
+
+#keySmash{
+position: absolute;
+width: 157px;
+height: 72px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+
+color: #FFFFFF;
+}
 
 li{
     list-style: none;
@@ -156,10 +281,6 @@ START CONTACT*/
 .contactTitle{
     color: black;
     text-align: center;
-}
-
-.footerContact{
-    bottom:0;
 }
 
 /*END CONTACT
