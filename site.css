@@ -15,7 +15,8 @@ header a{
 footer {
     background-color:#02733E;
     position: absolute;
-    bottom: 0;
+    
+    margin-bottom: -50px;
     width: 100%;
 }
 
@@ -33,8 +34,9 @@ footer a{
     min-height: 100vh;
 }
 
-#content-wrap {
-    padding-bottom: 1rem;    /* Footer height */
+.content {
+    padding-bottom: 1rem;
+    min-height:100vh;    /* Footer height */
 }
 
 /* Rectangle 1 */
