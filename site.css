@@ -1,4 +1,3 @@
-
 /*START MAIN*/
 header{
     background-color: #05F2AF;
@@ -13,6 +12,16 @@ header a{
     padding: 10px;
 }
 
+footer {
+    background-color:#02733E;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    color:white;
+}
 
 .date{
     float: right;
@@ -26,17 +35,6 @@ header a{
 
 #content-wrap {
     padding-bottom: 1rem;    /* Footer height */
-}
-
-footer {
-    background-color:#02733E;
-    position: absolute;
-    /*bottom: 0;*/
-    width: 100%;
-}
-
-footer a{
-    color:white;
 }
 
 /* Rectangle 1 */
@@ -97,9 +95,11 @@ color: #FFFFFF;
 
 #rectFour{
 position: absolute;
-width: 225px;
-height: 197px;
-
+top:300px;
+left:700px;
+width: 35vw;
+height: 56vh;
+z-index:-1;
 background: #583994;
 filter: blur(4px);
 }
@@ -119,22 +119,22 @@ filter: blur(4px);
 
 #rectNine{
 position: absolute;
-width: 225px;
-height: 197px;
-
-background: url(A5AACFC2-ECD4-405D-A2AF-B2379B8DB889.jpg);
+top:600px;
+left:700px;
+width:35vw;
+height:auto;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Rectangle 5 */
 
 #rectFive{
-position: absolute;
-width: 225px;
-height: 197px;
-
-background: url(me.jpg);
+width:35vw;
+height:auto;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+position: absolute;
+left: 150px;
+top:100px;
 }
 
 /* Rectangle 6 */
