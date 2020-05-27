@@ -36,9 +36,8 @@ footer a{
 
 .content {
     margin: 20px auto;
-    background-color:#fff;
     display:grid;
-    grid-template-columns: 50vw 50vh;
+    grid-template-columns: 50vw 50vw;
     grid-row: auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
@@ -75,7 +74,6 @@ footer a{
     background: #583994;
     color:white;
     padding:5rem 3rem;
-
 }
 
 /* links links links */
@@ -86,20 +84,6 @@ footer a{
     height: 47px;
     font-size: 12px;
     line-height: 14px;
-    color: #FFFFFF;
-}
-
-/* copy right info -hasn't been implemented yet */
-
-#copy{
-    position: absolute;
-    width: 98px;
-    height: 11px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 12px;
     color: #FFFFFF;
 }
 
@@ -118,40 +102,20 @@ li{
     padding:0px 5px 5px 5px;
 }
 
-/* END DESKTOP
-START MOBILE*/
-
-@media screen and (max-width: 1000px) {
-    .homeGrid{
-        grid-template-rows: repeat(4, 1fr);
+@media screen and (max-width: 480px) {
+    .content{
+        grid-template-columns: 75vw;
+        grid-row: auto;
+        align-items:center;
+        justify-content: center;
     }
-    .grid-1{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row: 1;
+    #rectSeven{
+        padding:1rem 4rem;
     }
-    .grid-2{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row: 2;
-    }
-    .grid-3{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row: 3;
-    }
-    .grid-4{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row: 4;
-    }
-    .hacker{
-        height: 100px;
-        width: 100px;
-    }
-    .hackathon{
-        height: 100px;
-        width: 100px;
+    
+    /*bottom paragraph*/
+    #rectEleven{
+        padding:1rem 4rem;
     }
 }
 
