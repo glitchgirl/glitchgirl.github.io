@@ -1,4 +1,5 @@
 /*START MAIN*/
+
 header{
     background-color: #05F2AF;
     color:black;
@@ -15,7 +16,7 @@ header a{
 footer {
     background-color:#02733E;
     position: absolute;
-    
+    font-family: 'Raleway', sans-serif;
     margin-bottom: -50px;
     width: 100%;
 }
@@ -35,14 +36,25 @@ footer a{
 }
 
 .content {
+    margin: 20px auto;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 50vw 50vh;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    font-family: 'Raleway', sans-serif;
     padding-bottom: 1rem;
     min-height:100vh;    /* Footer height */
 }
-
+.box{
+    padding:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 /* Rectangle 1 */
-
 #rectOne{
-position: absolute;
 width: 425px;
 height: 637px;
 
@@ -52,11 +64,72 @@ background: #FFFFFF;
 /* Rectangle 3 */
 
 #rectThree{
-position: absolute;
 width: 425px;
 height: 74px;
 
 background: #02733E;
+}
+
+/* Rectangle 4 */
+
+#rectFour{
+    top:300px;
+    left:700px;
+    width: 35vw;
+    height: 56vh;
+    z-index:-1;
+    background: #583994;
+    filter: blur(4px);
+    }
+
+/* Rectangle 5 */
+
+#rectFive{
+    width:35vw;
+    height:auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 150px;
+    top:100px;
+    }
+
+
+/* Rectangle 7- top paragraph */
+
+#rectSeven{
+    z-index:1000;
+    width:50vw;
+    background: #05F2AF;
+    border: solid 5px white;
+    padding:10px;
+}
+
+/* Rectangle 8 */
+
+#rectEight{
+    width: 225px;
+    height: 197px;
+    background: #05F2AF;
+    filter: blur(4px);
+}
+/* Rectangle 9 */
+
+#rectNine{
+top:600px;
+left:700px;
+width:35vw;
+height:auto;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*bottom paragraph*/
+#rectEleven{
+    z-index:1000;
+    width:50vw;
+    border: solid 5px white;
+    background: #583994;
+    color:white;
+    padding:5px;
 }
 
 /* links links links */
@@ -65,16 +138,13 @@ background: #02733E;
 position: absolute;
 width: 110px;
 height: 47px;
-
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 14px;
-
 color: #FFFFFF;
 }
-
 
 /* copy right info */
 
@@ -93,95 +163,6 @@ color: #FFFFFF;
 }
 
 
-/* Rectangle 4 */
-
-#rectFour{
-position: absolute;
-top:300px;
-left:700px;
-width: 35vw;
-height: 56vh;
-z-index:-1;
-background: #583994;
-filter: blur(4px);
-}
-
-/* Rectangle 8 */
-
-#rectEight{
-position: absolute;
-width: 225px;
-height: 197px;
-
-background: #05F2AF;
-filter: blur(4px);
-}
-
-/* Rectangle 9 */
-
-#rectNine{
-position: absolute;
-top:600px;
-left:700px;
-width:35vw;
-height:auto;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/* Rectangle 5 */
-
-#rectFive{
-width:35vw;
-height:auto;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-position: absolute;
-left: 150px;
-top:100px;
-}
-
-/* Rectangle 6 */
-
-#rectSix{
-position: absolute;
-width: 186px;
-height: 100px;
-
-background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/* Rectangle 10 */
-
-#rectTen{
-position: absolute;
-width: 186px;
-height: 100px;
-
-background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/* Rectangle 7 */
-
-#rectSeven{
-position: absolute;
-width: 175px;
-height: 90px;
-
-background: #05F2AF;
-}
-
-/* Rectangle 11 */
-
-#rectEleven{
-position: absolute;
-width: 175px;
-height: 90px;
-
-background: #583994;
-}
-
-/* beep beeep beep beep beeep beepb eaf’klkasdjfsakdfj asdf asj faei fhas idfa eg a */
 #beep{
 position: absolute;
 width: 165px;
@@ -237,7 +218,7 @@ START MOBILE*/
 
 @media screen and (max-width: 1000px) {
     .homeGrid{
-      grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
     .grid-1{
         grid-column-start: 1;
