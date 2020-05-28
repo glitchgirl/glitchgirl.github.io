@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="site.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <!--[if lt IE 9]>
 	    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
-    <title>personal site</title>
+    <title>Portfolio</title>
 
   </head>
 
@@ -28,30 +29,34 @@
     <figure class="gallery__item gallery__item--2">
       <img src="images/example of work 2.png" class="gallery__img" alt="Example of work 2">
     </figure>
-</div>
-<div class="writing">
+    <figure class="gallery__item gallery__item--3">
+        <img src="images/shadownrun.png" class="gallery__img" alt="Example of work 3">
+      </figure>
+
+<div class="gallery__item--4">
     <p>Come see my writing:</p>
     <a href="https://dev.to/glitchgirl/seo-accessibility-2512">SEO & Accessibility</a>
     <a href="https://dev.to/glitchgirl/how-to-make-your-own-ecommerce-site-on-the-cheap-part-1-2iad">Magento 2, part 1</a>
-</div>
 <div class="current">
     <p>Here is my current project:</p>
-    <p> Currently, I'm working on the 100 days UI challenge, come see it<a href="https://codepen.io/glitchgirl/"> here</a>.</p>
+    <p>At my job I am currently creating video lectures and creating an engaging online experience for my students</p>
+    <p>I also created a fake dating website using faker for a talk. See it <a href="morganchasemakes.com">here</a></p>
 </div>
 <div class="acomps">
- <h3>School and competitions: </h3> 
+ <h3>School, Competitions, and talks </h3> 
   <ul>
+    <li class="acompList"> Talk: Accessibility, SEO, and lighthouse - June 2020</li>
+    <li class="acompList">Talk: APIs and how to use them - May 2020</li>
+    <li class="acompList">Talk: Introduction to ecommerce with Magento 2</li>
+    <li class="acompList">Finishing 100 days of UI - read article <a href="https://dev.to/glitchgirl/i-completed-the-daily-ui-challenge-was-it-worth-it-4h1g">here</a></li>
+    <li class="acompList">Pynight Participant -- winter 2019,  winter 2020</li>
+    <li class="acompList">Codewarz Participant -- January 2017</li>
     <li class="acompList">Dean’s List Recipient -- Spring 2016 </li> 
     <li class="acompList">Hackathon Winner -- October 2016 </li>
-    <li class="acompList">Codewarz Participant -- January 2017</li>
   </ul>
-  <h3>Hard facts:</h3>
-  <ul>
-      <li class="acompList">Migrated multiple websites to AWS</li>
-      <li class="acompList">Increased site speeds by 3x -5x</li>
-      <li class="acompList"></li>Set up security and backup measures</li>
-      <li class="acompList">Currently working on an overhaul of an ecommerce site</li>
-  </ul>
+</div>
+</div>
+</div>
 </div>
 <footer id="footer">
   <ul v-for="link in links">
@@ -63,7 +68,6 @@
     <p>{{date}} - {{returnToday}}</p>
   </div>
 </footer>
-</div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="main.js"></script>
 </body>
