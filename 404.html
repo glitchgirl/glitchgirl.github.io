@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="site.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
-    <!--[if lt IE 9]>
-	    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
-    <![endif]-->
       <title>404</title>
   </head>
   <body>
@@ -17,19 +14,15 @@
         <a href="/portfolio.html">Portfolio</a>
         <a href="/contact.html">Contact</a>
       </header>
-     <p>404, sorry there is nothing here.</p>
+      <p>404, sorry there is nothing here.</p>
       <button onclick="window.location.href = 'https://glitchgirl.github.io';">Go back?</button>
       <footer id="footer">
-        <ul v-for="link in links">
-          <li>
-            <a :href="link.linkUrl">{{link.website}}</a>
-          </li>
-        </ul>
-        <div class="date">
-          <p>{{date}} - {{returnToday}}</p>
-        </div>
     </footer>
-      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="main.js"></script>
-   </body>
+    <li><a href="https://www.linkedin.com/in/morgan-smith-bb4258139/">linked in</a></li>
+    <li><a href="https://github.com/glitchgirl">github</a></li>
+    <li><a href="https://twitter.com/morganc_smith">twitter</a></li>
+    <li><a href="https://www.instagram.com/morganchasemakes/instagram"></a></li>
+  </ul>
+  <p class="depth">@ 2020 morgan chase</p>
+  </body>
 </html>

@@ -13,47 +13,62 @@
   </head>
 
 <body>
-        <header>
-            <a href="/portfolio.html">see my work</a>
-            <a href="/index.html">home</a>
-            <a href="/contact.html">contact</a>
+        <header> <!--add skip tab index-->
+            <a href="#about_me">about me</a>
+            <a href="#contact">contact</a>
+            <a href="#portfolio">portfolio</a>
         </header>
         <div class="content">
-          <div class="box">
-              <img src="images/me.jpg" alt="me as a hacker" class="depth imageMargin">
-            </div>
-            <div class="box">
-              <p id="rectSeven" class="depth">My name is Morgan Smith. 
-                I’m a very serious Web Developer.
-                I have been making sites since I was about 10, my neopets had the coolest landing pages of any digital animals. 
-                Then, during high school I kinda lost touch with coding, but fell in love with hardware. 
-                This is also when I learned a lot about OS, due to my skills in killing machines. 
-                I was probably the only 14 year old with a linux OS, and my dad was probably the only father who thought it would be a fun learning experience and a punishment (he was right).
-                Then in college, I took a programming class and  started to remember how much I enjoyed coding. 
-                I started making some small side projects, but being in college and working I didn’t get too much free time. 
-                But I did do plays, and hackathons. Of which, I won one. :)</p>
-              </div>
-              <div class="box">
-              <img src="images/hackATL.jpeg" alt="Hack Atlanta" class="depth imageMargin">
-            </div>
-              <!--paragraph-->
-              <div class="box">
-              <p id="rectEleven" class="depth">
-                From that hackathon I won an internship at RSI. 
-                During my internship, I got to work on .NET projects, PHP projects, and JS applications. While I was there I also managed a hackathon for a local charity. 
-                Then I graduated, and applied for way to many and was overwhelmed by choice.
-              
-              I ended up taking a job with a company that I have been working for on and off since 2014: Windsor Fine Jewelers, where I was their devops engineer. 
-              I manage multiple ecommerce sites, using magento and woocommerce. I also run smaller, non ecommerce sites for information for the store.
-              I ran these sites from server to css. Notably, during my time I have over tripled the site speed and helped ensure their security. 
-              I want to continue my serious web dev skills, especially in a structured environment where I can continue to use my skills. 
-              Now I work at the clubhouse, where I teach web development. I teach full stack, including node.js, html, css, mysql, and es6. 
+          <div class="selfie">
+            <img src="images/selfie.jpg" alt = "me, sitting on the roof of the cyber center" class="box">
+          </div>
+            <h1 class="depth">about me</h1>
+            </br>
+              <p id="about_me" class="depth">Hey!
+                <br>
+                &nbsp My name is Morgan Smith and I am currently a software instructor at the clubhouse! I teach full-stack web development, including version control(Github), HTML, CSS (SASS), javascript (es6), node.js, express, and MySQL. I also teach soft skills like project management, SEO, accessibility, conflict resolution, and how to write documentation. In my free time, I enjoy reading and making art. With a background in e-commerce and DevOps, I bring many facets of development to my students so they leave my class as well rounded full-stack developers.
               </p>
-              <!--background image-->
-        </div>
+              </br>
+              <p class="depth">
+                &nbsp My drive to teach is inspired by my desire to give back to my local community, and also to make the internet a better place through more inclusive design. I also love learning alongside my students to sharpen my skills, especially challenging myself to master skills that I think I am weaker in. I do this by taking online courses and building side projects.
+                Knowing that there is always more to learn and improve upon, some of my greatest achievements come from big problems. When I worked as a DevOps engineer, our biggest ongoing concern was site speed and security. While I was there, I tripled the site speed and improved security through migration from Rackspace to AWS, updating WordPress to the latest and most secure version. I also led a migration from Magento 1 to Magento 2. I have also done other migration work like this, like taking a local charity’s site and updating it to PHP 7, and hosted a hackathon to help fix other issues with the site.
+              </p>
+            </br>
+              <p class="depth">
+                  &nbsp Another work accomplishment that I am proud of is completely revamping my current works syllabus to reflect changes in the local tech industry. Adding things like Docker and microservices, while removing outdated content allows my students to have a competitive edge over other potential employees.
+                While I love teaching, I also miss doing actual development work full time. I am extremely flexible in my skills and can do anything from project management to DevOps. Below is a portfolio of some of my projects.
+                </p>
+              <br>
+              <h1 class="depth">portfolio</h1>
+              <div id="portfolio" class="grid-container depth">
+                  <div class="grid-item">
+                    <img src="images/example of work 1.jpg" alt="screenshot of magento 2 website" class="images">
+                  </div>
+                  <div class="grid-item">
+                    <img src="images/innovation.png" alt="screenshot of magento 2 website" class="images">
+                  </div>
+                  <div class="grid-item">
+                      <img src="images/example of work 2.png" alt="screenshot of magento 2 website" class="images">
+                  </div>
+                  <div class="grid-item"> 
+                    <img src="images/mobile.png" alt="screenshot of mobile website" class="images">
+                  </div>
+              </div>
       </div>
+      <h1 id="contact" class="depth"> contact me</h1>
+      <br>
+      <p class="depth">I also run shadow run campaigns, here is my site for <a href="http://spookygovernmentwebsite.com/">that</a>. I also enjoy just building weird side projects, and you can see those <a href="http://morganchasemakes.com/">here</a>. Additionally, I also write, and you can see my writing here:</p>
+      <p class="depth">Please feel free to contact me at any of the links below.</p>
+      <br>
+    </div>
     <footer id="footer">
-        <p>needs content</p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/morgan-smith-bb4258139/">linked in</a></li>
+          <li><a href="https://github.com/glitchgirl">github</a></li>
+          <li><a href="https://twitter.com/morganc_smith">twitter</a></li>
+          <li><a href="https://www.instagram.com/morganchasemakes/instagram"></a></li>
+        </ul>
+        <p class="depth">@ 2020 morgan chase</p>
     </footer>
 </body>
 </html>
