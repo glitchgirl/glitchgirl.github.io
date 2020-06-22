@@ -49,7 +49,11 @@ footer a{
     display:block;
     margin:auto;
 }
-
+@media only screen and (max-width: 600px) {
+    .depth {
+        width:60vw;
+    }
+  }
 li{
     list-style: none;
 }
