@@ -49,11 +49,8 @@ footer a{
     display:block;
     margin:auto;
 }
-@media only screen and (max-width: 600px) {
-    .depth {
-        width:60vw;
-    }
-  }
+
+
 li{
     list-style: none;
 }
@@ -70,4 +67,17 @@ li{
     width:35rem;
     height:auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 600px) {
+    .depth {
+        width:60vw;
+    }
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    .images{
+        width:50vw;
+        height:auto;
+    }
 }
