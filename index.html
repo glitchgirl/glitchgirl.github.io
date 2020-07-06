@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Personal website for Morgan Smith">
-    <link rel="stylesheet" type="text/css" href="site.css">
+    <link rel="stylesheet" type="text/css" href="site.css" id="theme">
+    <link rel="stylesheet" type="text/css" href="button.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <title>personal site</title>
     <meta name="google-site-verification" content="PsWE1QNTb9LAgMBivVRSAWg-OwIACHAHlVBh96Zw9to" />
@@ -13,14 +14,26 @@
   </head>
 
 <body>
-        <header> <!--add skip tab index-->
+        <header> <!--add skip tab index, rename class or id selfie no confusion-->
             <a href="#about_me">about me</a>
             <a href="#contact">contact</a>
             <a href="#portfolio">portfolio</a>
         </header>
         <div class="content">
+          <div id="darkButton">
+            <div class="sun" id="on">
+              </div>
+              <div class="moon" id="off">
+              </div>
+              <div class="switchContainer">
+                <label class="switch">
+                <input type="checkbox" id="sunshine" onclick="nightTime()">
+                <span class="slider round"></span>
+              </label>
+              </div>
+            </div>
           <div class="selfie">
-            <img src="images/selfie.jpg" alt = "me, sitting on the roof of the cyber center" class="images box">
+            <img src="images/selfie.jpg" alt = "me, sitting on the roof of the cyber center" class="images box" id="selfie">
           </div>
             <h1 class="depth">about me</h1>
             </br>
@@ -70,5 +83,6 @@
         </ul>
         <p class="depth">@ 2020 morgan chase</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

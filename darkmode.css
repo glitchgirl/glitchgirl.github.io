@@ -1,19 +1,19 @@
 header{
-    background-color: #05F2AF;
-    color:black;
+    background-color: #274D0F;
+    color:white;
     text-align: center;
     padding: 10px;
     font-family: 'Raleway', sans-serif;
 }
 
 header a{
-    color:black;
+    color:white;
     padding: 10px;
 }
 
 footer {
-    background-color: #05F2AF;
-    color:black;
+    background-color: #274D0F;
+    color:white;
     position: absolute;
     font-family: 'Raleway', sans-serif;
     margin-bottom: -50px;
@@ -21,7 +21,7 @@ footer {
 }
 
 footer a{
-    color:black;
+    color:white;
 }
 
 li{
@@ -41,6 +41,8 @@ li{
     font-family: 'Raleway', sans-serif;
     padding-bottom: 1rem;
     min-height:100vh;    /* Footer height */
+    background-color:black;
+    color:white;
 }
 
 .box{
