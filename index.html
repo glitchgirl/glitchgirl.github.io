@@ -1,92 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="<!-- figma:lang -->">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Personal website for Morgan Smith">
-    <link rel="stylesheet" type="text/css" href="site.css" id="theme">
-    <link rel="stylesheet" type="text/css" href="button.css">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <title>personal site</title>
-    <meta name="google-site-verification" content="PsWE1QNTb9LAgMBivVRSAWg-OwIACHAHlVBh96Zw9to" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway|VT323&display=swap" rel="stylesheet">
+    <!-- figma:head-start -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><!-- figma:title --></title>
+    <!-- figma:head-end -->
   </head>
-
-<body>
-        <header> <!--add skip tab index, rename class or id selfie no confusion-->
-            <a href="#about_me">about me</a>
-            <a href="#contact">contact</a>
-            <a href="#portfolio">portfolio</a>
-        </header>
-        <div class="content">
-          <div id="darkButton">
-            <div class="sun" id="on">
-              </div>
-              <div class="moon" id="off">
-              </div>
-              <div class="switchContainer">
-                <label class="switch">
-                <input type="checkbox" id="sunshine" onclick="nightTime()">
-                <span class="slider round"></span>
-              </label>
-              </div>
-            </div>
-          <div class="selfie">
-            <img src="images/selfie.jpg" alt = "me, sitting on the roof of the cyber center" class="images box" id="selfie">
-          </div>
-            <h1 class="depth">about me</h1>
-            </br>
-              <p id="about_me" class="depth">Hey!
-                <br>
-                &nbsp My name is Morgan Smith and I am currently a software developer at Vedapointe! I am a fullstack developer, and I specialize in react, and graph databases. I also help manage our social teams
-                In my free time, I enjoy reading and making art. 
-                With a background in e-commerce and DevOps, I bring many facets of development to my current job.
-              </p>
-              </br>
-              <p class="depth">
-                &nbsp At my last job I was a software instructor. I taught full-stack web development, including version control(Github), HTML, CSS (SASS), javascript (es6), node.js, express, and MySQL. 
-                I also teach soft skills like project management, SEO, accessibility, conflict resolution, and how to write documentation. 
-                &nbsp My drive to teach is inspired by my desire to give back to my local community, and also to make the internet a better place through more inclusive design. I also loved learning alongside my students to sharpen my skills, especially challenging myself to master skills that I think I am weaker in. I do this by taking online courses and building side projects.
-                Knowing that there is always more to learn and improve upon, some of my greatest achievements come from big problems. When I worked as a DevOps engineer, our biggest ongoing concern was site speed and security. While I was there, I tripled the site speed and improved security through migration from Rackspace to AWS, updating WordPress to the latest and most secure version. I also led a migration from Magento 1 to Magento 2. I have also done other migration work like this, like taking a local charity’s site and updating it to PHP 7, and hosted a hackathon to help fix other issues with the site.
-              </p>
-            </br>
-              <p class="depth">
-                  &nbsp Another work accomplishment that I am proud of is completely revamping my current works syllabus to reflect changes in the local tech industry. Adding things like Docker and microservices, while removing outdated content allows my students to have a competitive edge over other potential employees.
-                While I loved teaching, I am very exciting to be back  doing actual development work full time. I am extremely flexible in my skills and can do anything from project management to DevOps. Below is a portfolio of some of my projects.
-                </p>
-              </br>
-              <h1 class="depth">portfolio</h1>
-              <div id="portfolio" class="grid-container depth">
-                  <div class="grid-item">
-                    <img src="images/example of work 1.jpg" alt="screenshot of magento 2 website" class="images">
-                  </div>
-                  <div class="grid-item">
-                    <img src="images/innovation.png" alt="screenshot of magento 2 website" class="images">
-                  </div>
-                  <div class="grid-item">
-                      <img src="images/example of work 2.png" alt="screenshot of magento 2 website" class="images">
-                  </div>
-                  <div class="grid-item"> 
-                    <img src="images/mobile.png" alt="screenshot of mobile website" class="images">
-                  </div>
-              </div>
-    
-      <h1 id="contact" class="depth"> contact me</h1>
-      <br>
-      <p class="depth">I also run shadow run campaigns, here is my site for <a href="http://spookygovernmentwebsite.com/">that</a>. I also enjoy just building weird side projects, and you can see those <a href="http://morganchasemakes.com/">here</a>. Additionally, I also write, and you can see my writing here:</p>
-      <p class="depth">Please feel free to contact me at any of the links below.</p>
-      <br>
-    </div>
-    <footer id="footer">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/morgan-smith-bb4258139/">linked in</a></li>
-          <li><a href="https://github.com/glitchgirl">github</a></li>
-          <li><a href="https://twitter.com/morganc_smith">twitter</a></li>
-          <li><a href="https://www.instagram.com/morganchasemakes/instagram">instagram</a></li>
-        </ul>
-        <p class="depth">@ 2020 morgan chase</p>
-    </footer>
-    <script src="main.js"></script>
-</body>
+  <body>
+    <!-- figma:body-start -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- figma:body-end -->
+  </body>
 </html>
