@@ -4,32 +4,39 @@ const NAV_LINKS = ["About", "Courses", "Skills", "Projects", "Contact"];
 
 const COURSES = [
   {
-    code: "CS 101",
+    code: "CS 2742",
     title: "Intro to Programming",
     lang: "Python",
     color: "var(--color-mint)",
-    desc: "Foundations of computational thinking, variables, loops, and functions. 200+ students taught across 6 semesters.",
+    desc: "Foundations of computational thinking, variables, loops, and functions. This course also teaches computer graphics.",
   },
   {
-    code: "CS 220",
-    title: "Data Structures & Algorithms",
+    code: "CS 2371",
+    title: "Java Programming",
     lang: "Java",
     color: "var(--color-peach)",
-    desc: "Trees, graphs, sorting, and complexity analysis. Emphasizes problem-solving and whiteboard fluency.",
+    desc: "Object-oriented programming, data structures, and algorithms. Students learn to build real applications in Java. We also discuss legacy code.",
   },
   {
-    code: "CS 340",
-    title: "Web Development",
+    code: "CS 2381",
+    title: "Mobile App Development",
     lang: "JS / React",
     color: "var(--color-pink)",
-    desc: "Full-stack fundamentals from HTML and CSS to Node and React. Final projects ship as real deployed apps.",
+    desc: "Android development with Kotlin and React Native. Final projects ship as real deployed apps with a focus on accessibility and performance.",
   },
   {
-    code: "CS 450",
-    title: "Systems Programming",
-    lang: "C / Rust",
+    code: "CS 2341",
+    title: "C# Programming",
+    lang: "C# / .NET",
     color: "var(--color-lavender)",
-    desc: "Memory management, concurrency, and OS interfaces. The class that separates comfortable coders from engineers.",
+    desc: "Students learn to build desktop and web applications in C# using the .NET framework. We also cover debugging and testing.",
+  },
+    {
+    code: "CS 2932",
+    title: "Advanced Programming Topics",
+    lang: "student choice!",
+    color: "var(--color-lavender)",
+    desc: "Students choose a language and build a project of their choice. I provide guidance on architecture, testing, and deployment. This course is designed to be flexible and student-driven.",
   },
 ];
 
@@ -37,34 +44,30 @@ const SKILLS = [
   { name: "Python", level: 98, color: "var(--color-mint)" },
   { name: "JavaScript / TypeScript", level: 94, color: "var(--color-pink)" },
   { name: "Java", level: 90, color: "var(--color-peach)" },
-  { name: "C / C++", level: 85, color: "var(--color-lavender)" },
-  { name: "Rust", level: 72, color: "var(--color-magenta)" },
-  { name: "SQL / Databases", level: 88, color: "var(--color-mint)" },
+  { name: "C# / .NET", level: 92, color: "var(--color-lavender)" },
+  { name: "React / Frontend", level: 96, color: "var(--color-pink)" },
+  { name: "git / github", level: 90, color: "var(--color-mint)" },
+  { name: "SQL / Databases", level: 60, color: "var(--color-mint)" },
   { name: "Docker / DevOps", level: 80, color: "var(--color-pink)" },
   { name: "Curriculum Design", level: 96, color: "var(--color-peach)" },
 ];
 
 const PROJECTS = [
   {
-    title: "CodePath LMS",
+    title: "Library of Things",
     tag: "Open Source",
     color: "var(--color-lavender)",
-    desc: "A lightweight learning management system built for small CS departments. 12 schools adopted it in year one.",
-    stack: ["React", "Node", "PostgreSQL"],
+    URL: "https://github.com/glitchgirl/shared-library0",
+    desc: "Web app for managing a community library of shared items. Users can check out, return, and request items. Admins can manage inventory and track usage.",
+    stack: ["React", "Node", "GraphQL"],
   },
   {
-    title: "AlgoViz",
+    title: "Mobile app gyroscope visualizer",
     tag: "Teaching Tool",
     color: "var(--color-mint)",
-    desc: "Interactive algorithm visualizer used in 4 universities. Animates sorting, graph traversal, and dynamic programming.",
-    stack: ["D3.js", "Svelte", "Canvas API"],
-  },
-  {
-    title: "Gradeflow",
-    tag: "Productivity",
-    color: "var(--color-pink)",
-    desc: "Rubric-driven grading tool for programming assignments. Parses test output and auto-populates feedback comments.",
-    stack: ["Python", "FastAPI", "React"],
+    URL:"https://github.com/glitchgirl/gyroscope",
+    desc: "Mobile app that visualizes gyroscope data in real-time. Students can see how the device's orientation changes as they move it around.",
+    stack: ["React Native", "Expo", "TypeScript"],
   },
 ];
 
@@ -212,7 +215,7 @@ export default function App() {
               className="inline-flex items-center gap-2 text-xs px-4 py-2 rounded-full mb-8"
             >
               <span>✦</span>
-              <span>CS Instructor · 8 years · 1,400+ students</span>
+              <span>CS Instructor</span>
             </div>
 
             <h1
@@ -246,11 +249,9 @@ export default function App() {
               style={{ color: "var(--color-muted)", lineHeight: 1.75 }}
               className="text-base max-w-lg mb-10"
             >
-              Associate Professor of Computer Science at Westlake University. I believe every student
+              Professor of Computer Science at Augusta Technical College. I believe every student
               can become a programmer — they just need the right mental models, good problems, and someone
-              who gets genuinely excited about{" "}
-              <span style={{ fontFamily: "var(--font-mono)", color: "var(--color-pink)" }}>Big-O</span>{" "}
-              at 8 AM.
+              who gets genuinely excited about debugging. 
             </p>
 
             <div className="flex flex-wrap gap-4 mb-16">
@@ -275,10 +276,8 @@ export default function App() {
             {/* Stats row */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { n: "1,400+", label: "Students taught", color: "var(--color-pink)" },
-                { n: "8 yrs", label: "Teaching experience", color: "var(--color-magenta)" },
-                { n: "4", label: "Courses authored", color: "var(--color-lavender)" },
-                { n: "12", label: "Schools use CodePath", color: "var(--color-mint)" },
+                { n: "200+", label: "Students taught", color: "var(--color-pink)" },
+                { n: "9 yrs", label: "Industry experience", color: "var(--color-magenta)" },
               ].map(({ n, label, color }) => (
                 <div
                   key={label}
@@ -390,7 +389,7 @@ export default function App() {
               </h2>
               <p style={{ color: "var(--color-muted)", lineHeight: 1.75 }} className="text-sm mb-8">
                 I teach from first principles, not slides. Knowing a language deeply means I can explain
-                the <em>why</em> behind every gotcha — and there are a lot of gotchas in C.
+                the <em>why</em> behind every gotcha — and there are a lot of gotchas in C# or typescript.
               </p>
 
               <div
@@ -604,7 +603,7 @@ export default function App() {
       >
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
           <span style={{ fontFamily: "var(--font-mono)" }}>
-            © 2026 Morgan Smith · Westlake University
+            © 2026 Morgan Smith · Augusta Technical College
           </span>
           <div className="flex gap-6">
             {["GitHub", "LinkedIn", "Email"].map((l) => (
